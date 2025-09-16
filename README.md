@@ -34,28 +34,6 @@ VRPPTW/
 
 ---
 
-Do you want me to continue now with the **Core Components, Data, Next Steps, and License sections**, fully integrated with this design overview?
-
-## Project Structure
-
-```
-VRPPTW/
-├── data/                  # Raw and processed datasets
-├── data_processing/       # Modules to parse and prepare problem data
-│   └── __init__.py
-├── espprc/                # Core ESPPRC framework
-│   ├── __init__.py
-│   ├── base.py            # Abstract ESPPRC base class
-│   ├── espptwc.py         # ESPPTWC problem implementation
-│   ├── label.py           # Label class representing partial paths
-│   └── problem_data_test.py  # Small test instance for ESPPTWC
-├── .gitignore
-├── LICENSE
-└── README.md
-```
-
----
-
 ## Data
 
 The project will leverage benchmark **Solomon instances** for VRPTW problems. These datasets provide standardized **customer locations, demands, vehicle capacities, and time windows**, which are used to generate problem-specific inputs (feasible arcs, travel times, etc.) for the ESPPRC-based labeling algorithm.
